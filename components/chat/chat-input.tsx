@@ -8,10 +8,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-import { Form, FormControl, FormField, FormItem } from "../ui/form";
-import { Input } from "../ui/input";
+import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 import { useModal } from "@/hooks/use-modal-store";
-import { EmojiPicker } from "../emoji-picker";
+import { EmojiPicker } from "@/components/emoji-picker";
 
 interface ChatInputProps {
   apiUrl: string;
@@ -68,7 +68,7 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                     onClick={() => onOpen("messageFile", { apiUrl, query })}
                     className="absolute top-7 left-8 h-[24px] w-[24px] bg-zinc-500 dark:bg-zinc-400 hover:bg-zinc-600 dark:hover:bg-zinc-300 transition rounded-full p-1 flex items-center justify-center"
                   >
-                    <Plus className="text-white dark:text-[#25262a]" />l
+                    <Plus className="text-white dark:text-[#313338]" />
                   </button>
                   <Input
                     disabled={isLoading}
