@@ -1,5 +1,4 @@
 import { NextApiRequest } from "next";
-
 import { NextApiResponseServerIo } from "@/types";
 import { db } from "@/lib/db";
 import { currentProfile } from "@/lib/current-profil-pages";
